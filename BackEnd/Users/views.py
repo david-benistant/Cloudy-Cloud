@@ -1,6 +1,15 @@
 from rest_framework import generics
 from .models import Sale, Item, Order, Shopping
 from .serializers import SaleSerializer, ItemSerializer, OrderSerializer, ShoppingSerializer
+from django.http import JsonResponse
+from django.shortcuts import render
+
+
+def custom_404_api_view(request, exception):
+    return JsonResponse({'error': 'The requested resource was not found.'}, status=404)
+
+def custom_404_template_view(request, exception):
+    return render(request, '404.html', status=404)
 
 
 class SaleListView(generics.ListAPIView):

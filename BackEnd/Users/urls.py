@@ -1,5 +1,9 @@
 from django.urls import path
 from . import views
+from django.conf.urls import handler404
+from Users.views import custom_404_api_view 
+
+handler404 = custom_404_api_view 
 
 urlpatterns = [
 
@@ -15,3 +19,6 @@ urlpatterns = [
     path('shopping/', views.ShoppingListView.as_view(), name='shopping-list'),
     path('shopping/<int:pk>/', views.ShoppingDetailView.as_view(), name='shopping-detail'),
 ]
+
+
+
