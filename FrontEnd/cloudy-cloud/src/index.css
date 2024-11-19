@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rajdhani-Regular'), url('./assets/fonts/Rajdhani/Rajdhani-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Rajdhani-Light';
+  font-style: light;
+  font-weight: light;
+  src: local('Rajdhani-Light'), url('./assets/fonts/Rajdhani/Rajdhani-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Rajdhani-Bold';
+  font-style: bold;
+  font-weight: bold;
+  src: local('Rajdhani-Bold'), url('./assets/fonts/Rajdhani/Rajdhani-Bold.ttf') format("truetype");
+}
+
+/* @font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rajdhani'), url('./assets/fonts/Rajdhani/Rajdhani-Regular.ttf') format('ttf');
+} */

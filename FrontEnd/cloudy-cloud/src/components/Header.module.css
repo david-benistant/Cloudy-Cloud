@@ -1,0 +1,114 @@
+.headerMainDiv {
+    width: 100vw;
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logoHeader>p {
+    font-family: 'Rajdhani-Light', sans-serif;
+    font-size: 64px;
+    margin: 0px;
+    margin-left: 30px;
+    color: #BC7C8E;
+}
+
+.logoHeader>img {
+    width: 110px;
+}
+
+.hearderBurgerButton {
+    display: flex;
+    flex-direction: column;
+    width: 42px;
+    justify-content: space-between;
+    height: 40px;
+    cursor: pointer;
+}
+
+.headerItems {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hearderBurgerButton > div {
+    width: 100%;
+    background-color: #BC7C8E;
+    height: 7px;
+    border-radius: 100px;
+}
+
+.headerInput {
+    width: 30%;
+    display: flex;
+}
+
+.headerInput>input {
+    width: calc(100% - 50px);
+    height:35px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: solid;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.headerInput>input:focus {
+    outline: none;
+    border-left-color: #BC7C8E;
+    border-top-color: #BC7C8E;
+    border-bottom-color: #BC7C8E;
+    background-color: #f6f6f6;
+}
+
+.headerInput>input:active {
+    outline: none;
+    border-left-color: #BC7C8E;
+    border-top-color: #BC7C8E;
+    border-bottom-color: #BC7C8E;
+    background-color: #f6f6f6;
+}
+
+
+.headerInput>div {
+    width: 50px;
+    height: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #BC7C8E;
+    cursor: pointer;
+    border: solid;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerInput>div>img {
+    width: 27px;
+}
+
+.headerIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.headerSideObjects {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerIcons>img {
+    cursor: pointer;
+}
