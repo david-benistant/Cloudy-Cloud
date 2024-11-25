@@ -1,0 +1,80 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.authHead {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 35px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.authSwitch {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18.authSwitchx;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.authSwitch > a {
+    color: #BC7C8E;
+    text-decoration: none;
+}
+.authForm {
+    width: 100%;
+    margin: 20px;
+    height:35px;
+    border-radius: 10px;
+    border: solid;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 0px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.authForm:focus {
+    outline: none;
+    border-color: #BC7C8E;
+    background-color: #f6f6f6;
+}
+
+.authForm:active {
+    outline: none;
+    border-color: #BC7C8E;
+    background-color: #f6f6f6;
+}
+
+.authFormButton {
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #BC7C8E;
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.authFormButton:hover {
+    background-color: #975668;
+}
+
+.authFormButton:active {
+    background-color: #dfbac5;
+}
