@@ -1,6 +1,9 @@
 import style from "./Auth.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+    const navigate = useNavigate();
+
     return (
         <div className={style.mainDiv}>
             <div className={style.formDiv}>
@@ -11,7 +14,7 @@ const Register = () => {
                 <p className={style.authSwitch} >
                     <a href="/login">Sign in</a>
                 </p>
-                <button className={style.authFormButton} >Sign up</button>
+                <button className={style.authFormButton} onClick={() => {navigate("/")}} >Sign up</button>
             </div>
         </div>
     );

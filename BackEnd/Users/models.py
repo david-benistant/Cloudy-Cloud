@@ -43,3 +43,11 @@ class Shopping(models.Model):
     def __str__(self):
         return f"{self.quantity} x {self.item.name} in shopping cart"
 
+
+
+class User(models.Model):
+    email = models.EmailField()
+    password = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.username

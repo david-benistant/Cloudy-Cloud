@@ -18,6 +18,10 @@ urlpatterns = [
 
     path('shopping/', views.ShoppingListView.as_view(), name='shopping-list'),
     path('shopping/<int:pk>/', views.ShoppingDetailView.as_view(), name='shopping-detail'),
+
+
+    path('login/', views.LoginAPIView.as_view(), name='api-login'),
+
 ]
 
 
