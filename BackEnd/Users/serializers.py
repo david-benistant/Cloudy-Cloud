@@ -1,15 +1,11 @@
 from rest_framework import serializers
-from .models import Sale, Item, Order, Shopping
+from .models import Item, Order, Shopping
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = '__all__'
 
-class SaleSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Sale
-        fields = '__all__'
 
 class OrderSerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)

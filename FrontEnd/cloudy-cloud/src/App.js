@@ -6,6 +6,7 @@ import Category from './pages/Category';
 import Account from './pages/Account';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Search from './pages/Search';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/account" element={<Account />} />
         <Route path="/login" element={<Login />}  />
         <Route path="/register" element={<Register />}  />
+        <Route path="/search" element={<Search />}  />
       </Routes>
     </Router>
   );

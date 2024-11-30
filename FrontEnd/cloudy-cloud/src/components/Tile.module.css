@@ -1,6 +1,7 @@
 .tileMainDiv {
     width: 300px;
     margin: 15px;
+    cursor: pointer;
 }
 
 .tile {

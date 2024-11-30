@@ -1,0 +1,38 @@
+[
+    {
+        "model": "Users.user",
+        "pk": 1,
+        "fields": {
+            "email": "karolina.griszan2@mail.dcu.ie",
+            "password": "karolina",
+            "username": "Karolina"
+        }
+    },
+    {
+        "model": "Users.user",
+        "pk": 2,
+        "fields": {
+            "email": "aine.coughlan25@mail.dcu.ie",
+            "password": "aine",
+            "username": "Aine"
+        }
+    },
+    {
+        "model": "Users.user",
+        "pk": 3,
+        "fields": {
+            "email": "david.benistant2@mail.dcu.ie",
+            "password": "david",
+            "username": "David"
+        }
+    },
+    {
+        "model": "Users.user",
+        "pk": 4,
+        "fields": {
+            "email": "barry.clavin2@mail.dcu.ie",
+            "password": "barry",
+            "username": "Barry"
+        }
+    }
+]

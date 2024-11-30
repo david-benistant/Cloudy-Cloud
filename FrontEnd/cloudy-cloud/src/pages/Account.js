@@ -7,7 +7,14 @@ import Security from "../assets/Security.svg";
 import Home from "../assets/Home.svg";
 import Card from "../assets/Card.svg";
 import Customer from "../assets/Customer.svg";
+import Logout from "../assets/Logout.svg";
+import { useEffect } from "react";
 
+
+const logoutFunction = () => {
+    localStorage.removeItem("username");
+    window.location.href = "/";
+}
 const Boxs = [
     {
         icon: Orders,
@@ -29,6 +36,11 @@ const Boxs = [
         icon: Customer,
         text: "Customer service",
     },
+    {
+        icon: Logout,
+        text: "Logout",
+        action: logoutFunction
+    },
 ];
 
 const Box = ({ icon, text, onClick }) => {
@@ -43,6 +55,13 @@ const Box = ({ icon, text, onClick }) => {
 };
 
 const Account = () => {
+
+    useEffect(() => {
+        if (!localStorage.getItem("username")) {
+            window.location.href = "/login";
+        }
+    })
+
     return (
         <div>
             <Header />
@@ -50,7 +69,7 @@ const Account = () => {
 
             <div className={style.boxsContainer}>
                 {Boxs.map((box, index) => (
-                    <div>
+                    <div onClick={box.action ? () => {  box.action()} : undefined} >
                         <Box key={index} icon={box.icon} text={box.text} />
                     </div>
                 ))}
