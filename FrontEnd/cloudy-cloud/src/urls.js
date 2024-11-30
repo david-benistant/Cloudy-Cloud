@@ -1,5 +1,5 @@
 const urls = {
-    api: "http://localhost:8000",
+    api: "http://52.50.217.202",
 };
 
 export default urls;
