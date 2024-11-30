@@ -20,7 +20,8 @@ jobs:
 
     - name: Install and Build React App
       run: |
-        ls
+        npm install
+        npm run build
       working-directory: ./FrontEnd/cloudy-cloud
 
     - name: Deploy to S3
