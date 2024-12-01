@@ -1,5 +1,5 @@
 const urls = {
-    api: "https://ec2-52-50-217-202.eu-west-1.compute.amazonaws.com/",
+    api: "https://cloudy-cloud.jardinsdelasource.fr/",
 };
 
 export default urls;
